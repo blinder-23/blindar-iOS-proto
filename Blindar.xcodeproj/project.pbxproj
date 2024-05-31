@@ -19,6 +19,7 @@
 		099EF66E2C08747800222E2F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF66D2C08747800222E2F /* CalendarView.swift */; };
 		099EF6702C08749700222E2F /* MealContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF66F2C08749700222E2F /* MealContentsView.swift */; };
 		099EF6722C0876BC00222E2F /* ScheduleContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF6712C0876BC00222E2F /* ScheduleContentsView.swift */; };
+		099EF6762C09607D00222E2F /* NutrientNavigationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF6752C09607D00222E2F /* NutrientNavigationPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		099EF66D2C08747800222E2F /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		099EF66F2C08749700222E2F /* MealContentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealContentsView.swift; sourceTree = "<group>"; };
 		099EF6712C0876BC00222E2F /* ScheduleContentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleContentsView.swift; sourceTree = "<group>"; };
+		099EF6752C09607D00222E2F /* NutrientNavigationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientNavigationPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				099EF66D2C08747800222E2F /* CalendarView.swift */,
 				099EF66F2C08749700222E2F /* MealContentsView.swift */,
 				099EF6712C0876BC00222E2F /* ScheduleContentsView.swift */,
+				099EF6752C09607D00222E2F /* NutrientNavigationPage.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				099EF66C2C08743D00222E2F /* MainCalendarPage.swift in Sources */,
 				099EF6702C08749700222E2F /* MealContentsView.swift in Sources */,
 				099EF66A2C0873C400222E2F /* Item.swift in Sources */,
+				099EF6762C09607D00222E2F /* NutrientNavigationPage.swift in Sources */,
 				099EF63C2C08732400222E2F /* BlindarApp.swift in Sources */,
 				099EF6722C0876BC00222E2F /* ScheduleContentsView.swift in Sources */,
 			);

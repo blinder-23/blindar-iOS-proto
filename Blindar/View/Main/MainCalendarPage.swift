@@ -9,8 +9,11 @@ import SwiftUI
 
 struct MainCalendarPage: View {
     var body: some View {
-        LazyVStack {
-            CalendarView()
+        NavigationStack {
+            ScrollView {
+                CalendarView()
+                MealContentsView()
+            }
         }
     }
 }

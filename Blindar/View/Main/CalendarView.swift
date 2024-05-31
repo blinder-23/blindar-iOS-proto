@@ -181,8 +181,6 @@ struct CustomCalendar: View {
     }
 }
 
-
-
 #Preview {
     CalendarView()
 }
