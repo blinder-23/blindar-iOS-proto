@@ -57,9 +57,18 @@ struct MealContentsView: View {
                     }
                 })
                 //Meal Info
+                //더미 데이터
                 VStack {
-                    Text("mealType별 식단")
+                    switch mealtype {
+                    case .breakfast:
+                        Text("조식")
+                    case .lunch:
+                        Text("중식")
+                    case .dinner:
+                        Text("석식")
+                    }
                 }
+                .font(.title3)
                 //Nutrition Info Button
                 NavigationLink {
                     NutrientNavigationPage()
@@ -72,7 +81,7 @@ struct MealContentsView: View {
                         .background(in: RoundedRectangle(cornerRadius: 16))
                 }
             }
-            .frame(width: screenWidth * 0.9)
+            .frame(width: screenWidth * 0.85)
             .padding()
             .background(Color.hex2E2E2E, in: RoundedRectangle(cornerRadius: 16))
         }
