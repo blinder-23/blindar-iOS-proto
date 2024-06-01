@@ -11,6 +11,7 @@ struct MainCalendarPage: View {
     var body: some View {
         NavigationStack {
             ScrollView {
+                
                 CalendarView()
                 MealContentsView()
             }

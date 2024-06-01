@@ -20,28 +20,44 @@ struct MealContentsView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 20) {
-                //Header
-                HStack {
-                    ForEach(MealType.allCases, id: \.self) { type in
-                        Text(type.rawValue)
-                            .font(.title2)
-                            .fontWeight(mealtype == type ? .bold : .regular)
-                            .foregroundColor(mealtype == type ? .white : .gray)
-                            .padding(.horizontal, 8)
-                            .padding(.bottom, 5)
-                            .overlay(alignment: .bottom, content: {
-                                if mealtype == type {
-                                    Rectangle()
-                                        .frame(height: 3)
-                                }
-                            })
+                //Swipe zone
+                VStack(spacing: 20) {
+                    //Header
+                    HStack {
+                        ForEach(MealType.allCases, id: \.self) { type in
+                            Text(type.rawValue)
+                                .font(.title2)
+                                .fontWeight(mealtype == type ? .bold : .regular)
+                                .foregroundColor(mealtype == type ? .white : .gray)
+                                .padding(.horizontal, 8)
+                                .padding(.bottom, 5)
+                                .overlay(alignment: .bottom, content: {
+                                    if mealtype == type {
+                                        Rectangle()
+                                            .frame(height: 3)
+                                    }
+                                })
+                        }
                     }
+                    .overlay(alignment: .bottom, content: {
+                        Rectangle()
+                            .frame(height: 1)
+                            .foregroundColor(.gray)
+                    })
+                    //Meal Info
+                    //더미 데이터
+                    VStack {
+                        switch mealtype {
+                        case .breakfast:
+                            Text("조식")
+                        case .lunch:
+                            Text("중식")
+                        case .dinner:
+                            Text("석식")
+                        }
+                    }
+                    .font(.title3)
                 }
-                .overlay(alignment: .bottom, content: {
-                    Rectangle()
-                        .frame(height: 1)
-                        .foregroundColor(.gray)
-                })
                 .gesture(DragGesture().onEnded { value in
                     let allCases = MealType.allCases
                     if value.translation.width > 0 {
@@ -56,19 +72,6 @@ struct MealContentsView: View {
                         }
                     }
                 })
-                //Meal Info
-                //더미 데이터
-                VStack {
-                    switch mealtype {
-                    case .breakfast:
-                        Text("조식")
-                    case .lunch:
-                        Text("중식")
-                    case .dinner:
-                        Text("석식")
-                    }
-                }
-                .font(.title3)
                 //Nutrition Info Button
                 NavigationLink {
                     NutrientNavigationPage()
