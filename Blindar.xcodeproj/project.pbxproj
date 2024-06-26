@@ -120,6 +120,7 @@
 		099EF63A2C08732400222E2F /* Blindar */ = {
 			isa = PBXGroup;
 			children = (
+				0985E2D82C2BD67400BDED83 /* Config.xcconfig */,
 				099EF6412C08732700222E2F /* Assets.xcassets */,
 				0985E2EB2C2BE43000BDED83 /* Config.xcconfig */,
 				099EF63B2C08732400222E2F /* BlindarApp.swift */,
