@@ -42,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		0985E2D62C2BD4C900BDED83 /* MemoNavigationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoNavigationPage.swift; sourceTree = "<group>"; };
+		0985E2D82C2BD67400BDED83 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		099EF6382C08732400222E2F /* Blindar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blindar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		099EF63B2C08732400222E2F /* BlindarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindarApp.swift; sourceTree = "<group>"; };
 		099EF63D2C08732400222E2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 		099EF63A2C08732400222E2F /* Blindar */ = {
 			isa = PBXGroup;
 			children = (
+				0985E2D82C2BD67400BDED83 /* Config.xcconfig */,
 				099EF6412C08732700222E2F /* Assets.xcassets */,
 				099EF63B2C08732400222E2F /* BlindarApp.swift */,
 				099EF6672C0873A600222E2F /* Model */,
