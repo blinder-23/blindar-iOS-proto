@@ -11,7 +11,7 @@
 		0985E2DC2C2BD7D500BDED83 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2DB2C2BD7D500BDED83 /* User.swift */; };
 		0985E2DE2C2BD81400BDED83 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2DD2C2BD81400BDED83 /* Meal.swift */; };
 		0985E2E02C2BD84B00BDED83 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2DF2C2BD84B00BDED83 /* Schedule.swift */; };
-		0985E2E22C2BD85300BDED83 /* Shcool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2E12C2BD85300BDED83 /* Shcool.swift */; };
+		0985E2E22C2BD85300BDED83 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2E12C2BD85300BDED83 /* School.swift */; };
 		0985E2E52C2BDD0600BDED83 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2E42C2BDD0600BDED83 /* Memo.swift */; };
 		0985E2E72C2BDDC500BDED83 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2E62C2BDDC500BDED83 /* Feedback.swift */; };
 		099EF63C2C08732400222E2F /* BlindarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF63B2C08732400222E2F /* BlindarApp.swift */; };
@@ -50,7 +50,7 @@
 		0985E2DB2C2BD7D500BDED83 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0985E2DD2C2BD81400BDED83 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		0985E2DF2C2BD84B00BDED83 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
-		0985E2E12C2BD85300BDED83 /* Shcool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shcool.swift; sourceTree = "<group>"; };
+		0985E2E12C2BD85300BDED83 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		0985E2E42C2BDD0600BDED83 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		0985E2E62C2BDDC500BDED83 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		099EF6382C08732400222E2F /* Blindar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blindar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,7 +158,7 @@
 				0985E2DB2C2BD7D500BDED83 /* User.swift */,
 				0985E2DD2C2BD81400BDED83 /* Meal.swift */,
 				0985E2DF2C2BD84B00BDED83 /* Schedule.swift */,
-				0985E2E12C2BD85300BDED83 /* Shcool.swift */,
+				0985E2E12C2BD85300BDED83 /* School.swift */,
 				0985E2E42C2BDD0600BDED83 /* Memo.swift */,
 				0985E2E62C2BDDC500BDED83 /* Feedback.swift */,
 			);
@@ -338,7 +338,7 @@
 				0985E2E52C2BDD0600BDED83 /* Memo.swift in Sources */,
 				099EF6722C0876BC00222E2F /* ScheduleContentsView.swift in Sources */,
 				0985E2E72C2BDDC500BDED83 /* Feedback.swift in Sources */,
-				0985E2E22C2BD85300BDED83 /* Shcool.swift in Sources */,
+				0985E2E22C2BD85300BDED83 /* School.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
