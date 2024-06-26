@@ -21,8 +21,8 @@ struct CalendarView: View {
                         currentDate = Calendar.current.date(byAdding: .month, value: -1, to: currentDate) ?? currentDate
                     }
                 })
-                .padding()
         }
+        .padding(.horizontal)
     }
 }
 
@@ -31,7 +31,7 @@ struct CalendarHeader: View {
     let daysOfWeek = ["일", "월", "화", "수", "목", "금", "토"]
     
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             HStack(spacing: 70) {
                 //년, 월
                 VStack {
@@ -70,8 +70,6 @@ struct CalendarHeader: View {
                         .foregroundColor(day == "일" ? .red : (day == "토" ? .blue : .white))
                 }
             }
-            .padding(.horizontal)
-            .padding(.top)
         }
     }
     
@@ -130,14 +128,14 @@ struct CustomCalendar: View {
     }
     
     var body: some View {
-        VStack(spacing: 15) {
+        VStack(spacing: 5) {
             ForEach(daysInMonth, id: \.self) { week in
                 HStack {
                     ForEach(week, id: \.self) { date in
                         Text("\(Calendar.current.component(.day, from: date))")
                             .font(.title3)
                             .frame(maxWidth: .infinity)
-                            .padding(5)
+                            .padding(4)
                             .foregroundColor(color(for: date))
                             .overlay(todayOverlay(for: date))
                             .onTapGesture {
@@ -180,8 +178,6 @@ struct CustomCalendar: View {
         return formatter.string(from: date)
     }
 }
-
-
 
 #Preview {
     CalendarView()

@@ -8,6 +8,9 @@
 import SwiftUI
 import SwiftData
 
+var screenWidth = UIScreen.main.bounds.width
+var screenHeight = UIScreen.main.bounds.height
+
 struct ContentView: View {
     var body: some View {
         MainCalendarPage()
