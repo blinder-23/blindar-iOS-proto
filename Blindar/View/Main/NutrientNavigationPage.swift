@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NutrientNavigationPage: View {
     var body: some View {
-        Text("영양 정보 페이지")
+        Text("NutrientNavigationPage")
     }
 }
 

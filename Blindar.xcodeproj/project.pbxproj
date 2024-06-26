@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0985E2D72C2BD4C900BDED83 /* MemoNavigationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2D62C2BD4C900BDED83 /* MemoNavigationPage.swift */; };
 		099EF63C2C08732400222E2F /* BlindarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF63B2C08732400222E2F /* BlindarApp.swift */; };
 		099EF63E2C08732400222E2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF63D2C08732400222E2F /* ContentView.swift */; };
 		099EF6422C08732700222E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099EF6412C08732700222E2F /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0985E2D62C2BD4C900BDED83 /* MemoNavigationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoNavigationPage.swift; sourceTree = "<group>"; };
 		099EF6382C08732400222E2F /* Blindar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blindar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		099EF63B2C08732400222E2F /* BlindarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindarApp.swift; sourceTree = "<group>"; };
 		099EF63D2C08732400222E2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				099EF66D2C08747800222E2F /* CalendarView.swift */,
 				099EF66F2C08749700222E2F /* MealContentsView.swift */,
 				099EF6712C0876BC00222E2F /* ScheduleContentsView.swift */,
+				0985E2D62C2BD4C900BDED83 /* MemoNavigationPage.swift */,
 				099EF6752C09607D00222E2F /* NutrientNavigationPage.swift */,
 			);
 			path = Main;
@@ -310,6 +313,7 @@
 				099EF66E2C08747800222E2F /* CalendarView.swift in Sources */,
 				099EF63E2C08732400222E2F /* ContentView.swift in Sources */,
 				099EF66C2C08743D00222E2F /* MainCalendarPage.swift in Sources */,
+				0985E2D72C2BD4C900BDED83 /* MemoNavigationPage.swift in Sources */,
 				099EF6702C08749700222E2F /* MealContentsView.swift in Sources */,
 				099EF66A2C0873C400222E2F /* Item.swift in Sources */,
 				099EF6762C09607D00222E2F /* NutrientNavigationPage.swift in Sources */,
