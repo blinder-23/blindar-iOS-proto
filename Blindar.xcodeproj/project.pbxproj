@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0985E2D72C2BD4C900BDED83 /* MemoNavigationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2D62C2BD4C900BDED83 /* MemoNavigationPage.swift */; };
+		0985E2DC2C2BD7D500BDED83 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2DB2C2BD7D500BDED83 /* User.swift */; };
+		0985E2DE2C2BD81400BDED83 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2DD2C2BD81400BDED83 /* Meal.swift */; };
+		0985E2E02C2BD84B00BDED83 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2DF2C2BD84B00BDED83 /* Schedule.swift */; };
+		0985E2E22C2BD85300BDED83 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2E12C2BD85300BDED83 /* School.swift */; };
+		0985E2E52C2BDD0600BDED83 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2E42C2BDD0600BDED83 /* Memo.swift */; };
+		0985E2E72C2BDDC500BDED83 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2E62C2BDDC500BDED83 /* Feedback.swift */; };
+		0985E2EC2C2BE43000BDED83 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0985E2EB2C2BE43000BDED83 /* Config.xcconfig */; };
 		099EF63C2C08732400222E2F /* BlindarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF63B2C08732400222E2F /* BlindarApp.swift */; };
 		099EF63E2C08732400222E2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF63D2C08732400222E2F /* ContentView.swift */; };
 		099EF6422C08732700222E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099EF6412C08732700222E2F /* Assets.xcassets */; };
@@ -15,7 +22,6 @@
 		099EF64F2C08732700222E2F /* BlindarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF64E2C08732700222E2F /* BlindarTests.swift */; };
 		099EF6592C08732700222E2F /* BlindarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF6582C08732700222E2F /* BlindarUITests.swift */; };
 		099EF65B2C08732700222E2F /* BlindarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF65A2C08732700222E2F /* BlindarUITestsLaunchTests.swift */; };
-		099EF66A2C0873C400222E2F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF6692C0873C400222E2F /* Item.swift */; };
 		099EF66C2C08743D00222E2F /* MainCalendarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF66B2C08743D00222E2F /* MainCalendarPage.swift */; };
 		099EF66E2C08747800222E2F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF66D2C08747800222E2F /* CalendarView.swift */; };
 		099EF6702C08749700222E2F /* MealContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EF66F2C08749700222E2F /* MealContentsView.swift */; };
@@ -42,7 +48,13 @@
 
 /* Begin PBXFileReference section */
 		0985E2D62C2BD4C900BDED83 /* MemoNavigationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoNavigationPage.swift; sourceTree = "<group>"; };
-		0985E2D82C2BD67400BDED83 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		0985E2DB2C2BD7D500BDED83 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0985E2DD2C2BD81400BDED83 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		0985E2DF2C2BD84B00BDED83 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		0985E2E12C2BD85300BDED83 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		0985E2E42C2BDD0600BDED83 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		0985E2E62C2BDDC500BDED83 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		0985E2EB2C2BE43000BDED83 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		099EF6382C08732400222E2F /* Blindar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blindar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		099EF63B2C08732400222E2F /* BlindarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindarApp.swift; sourceTree = "<group>"; };
 		099EF63D2C08732400222E2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,7 +65,6 @@
 		099EF6542C08732700222E2F /* BlindarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlindarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		099EF6582C08732700222E2F /* BlindarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindarUITests.swift; sourceTree = "<group>"; };
 		099EF65A2C08732700222E2F /* BlindarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindarUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		099EF6692C0873C400222E2F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		099EF66B2C08743D00222E2F /* MainCalendarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCalendarPage.swift; sourceTree = "<group>"; };
 		099EF66D2C08747800222E2F /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		099EF66F2C08749700222E2F /* MealContentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealContentsView.swift; sourceTree = "<group>"; };
@@ -111,6 +122,7 @@
 			children = (
 				0985E2D82C2BD67400BDED83 /* Config.xcconfig */,
 				099EF6412C08732700222E2F /* Assets.xcassets */,
+				0985E2EB2C2BE43000BDED83 /* Config.xcconfig */,
 				099EF63B2C08732400222E2F /* BlindarApp.swift */,
 				099EF6672C0873A600222E2F /* Model */,
 				099EF6682C0873AB00222E2F /* View */,
@@ -147,7 +159,12 @@
 		099EF6672C0873A600222E2F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				099EF6692C0873C400222E2F /* Item.swift */,
+				0985E2DB2C2BD7D500BDED83 /* User.swift */,
+				0985E2DD2C2BD81400BDED83 /* Meal.swift */,
+				0985E2DF2C2BD84B00BDED83 /* Schedule.swift */,
+				0985E2E12C2BD85300BDED83 /* School.swift */,
+				0985E2E42C2BDD0600BDED83 /* Memo.swift */,
+				0985E2E62C2BDDC500BDED83 /* Feedback.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				099EF6452C08732700222E2F /* Preview Assets.xcassets in Resources */,
+				0985E2EC2C2BE43000BDED83 /* Config.xcconfig in Resources */,
 				099EF6422C08732700222E2F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,15 +330,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0985E2DE2C2BD81400BDED83 /* Meal.swift in Sources */,
 				099EF66E2C08747800222E2F /* CalendarView.swift in Sources */,
+				0985E2E02C2BD84B00BDED83 /* Schedule.swift in Sources */,
 				099EF63E2C08732400222E2F /* ContentView.swift in Sources */,
 				099EF66C2C08743D00222E2F /* MainCalendarPage.swift in Sources */,
 				0985E2D72C2BD4C900BDED83 /* MemoNavigationPage.swift in Sources */,
 				099EF6702C08749700222E2F /* MealContentsView.swift in Sources */,
-				099EF66A2C0873C400222E2F /* Item.swift in Sources */,
+				0985E2DC2C2BD7D500BDED83 /* User.swift in Sources */,
 				099EF6762C09607D00222E2F /* NutrientNavigationPage.swift in Sources */,
 				099EF63C2C08732400222E2F /* BlindarApp.swift in Sources */,
+				0985E2E52C2BDD0600BDED83 /* Memo.swift in Sources */,
 				099EF6722C0876BC00222E2F /* ScheduleContentsView.swift in Sources */,
+				0985E2E72C2BDDC500BDED83 /* Feedback.swift in Sources */,
+				0985E2E22C2BD85300BDED83 /* School.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
