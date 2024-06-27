@@ -8,18 +8,22 @@
 import Foundation
 import SwiftData
 
-struct School: Codable {
+struct SchoolResponse: Codable {
+    var message: String
+    var responseCode: Int
+    var data: [School]
+}
+
+struct School: Codable, Hashable {
     var school_name: String //학교 이름 (한글)
-    var school_code: String //NEIS API에서 제공하는 표준 학교 코드
+    var school_code: Int //NEIS API에서 제공하는 표준 학교 코드
 }
 
 @Model
 class SchoolData {
     var school_name: String //학교 이름 (한글)
-    var school_code: String //NEIS API에서 제공하는 표준 학교 코드
     
-    init(school_name: String, school_code: String) {
+    init(school_name: String) {
         self.school_name = school_name
-        self.school_code = school_code
     }
 }

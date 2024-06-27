@@ -16,9 +16,9 @@ struct User: Codable {
 
 @Model
 class UserData {
-    var user_id: String //Google Firebase UID
+    @Attribute(.unique) var user_id: String //Google Firebase UID
     var school_code: Int //NEIS API에서 제공하는 표준 학교 코드
-    var name: String //유저 닉네임
+    @Attribute(.unique) var name: String //유저 닉네임
     
     init(user_id: String, school_code: Int, name: String) {
         self.user_id = user_id
