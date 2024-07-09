@@ -15,6 +15,7 @@ class SchoolViewModel: ObservableObject {
     
     func fetchSchools() {
         SchoolAPI.shared.fetchSchools()
+            .receive(on: DispatchQueue.main) // 메인 스레드에서 값을 받도록 설정
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .failure(let error):
@@ -22,12 +23,12 @@ class SchoolViewModel: ObservableObject {
                 case .finished:
                     break
                 }
-            }, receiveValue: { response in
-                self.schools = response.data
-                //디버깅
-                print("학교 목록 조회 응답 데이터 : ", response)
+            }, receiveValue: { schools in
+                self.schools = schools
             })
             .store(in: &cancellables)
     }
 }
+
+
 
