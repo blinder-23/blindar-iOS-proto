@@ -27,6 +27,18 @@ class MealLocalData {
     }
 }
 
+struct MealReqeust: Codable {
+    var schoolCode: Int
+    var year: Int
+    var month: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case schoolCode = "school_code"
+        case year = "year"
+        case month = "month"
+    }
+}
+
 struct MealResponse: Codable {
     let response: [Meal]
 }

@@ -13,8 +13,8 @@ class MealViewModel: ObservableObject {
     @Published var errorMessage: String?
     private var cancellables = Set<AnyCancellable>()
     
-    func fetchSchools() {
-        SchoolAPI.shared.fetchSchools()
+    func fetchMeals() {
+        MealAPI.shared.fetchSchools()
             .receive(on: DispatchQueue.main) // 메인 스레드에서 값을 받도록 설정
             .sink(receiveCompletion: { completion in
                 switch completion {
@@ -25,6 +25,7 @@ class MealViewModel: ObservableObject {
                 }
             }, receiveValue: { meals in
                 self.meals = meals
+                print(meals)
             })
             .store(in: &cancellables)
     }

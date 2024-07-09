@@ -30,12 +30,11 @@ struct SelectSchoolScreen: View {
                     .fontWeight(.bold)
                 Spacer()
             }
-            .padding()
             .padding(.vertical, 20)
             //검색바
             RoundedRectangle(cornerRadius: 5)
                 .stroke(Color.white)
-                .frame(width: screenWidth * 0.92, height: 60)
+                .frame(height: 60)
                 .overlay {
                     HStack {
                         Image(systemName: "magnifyingglass")
@@ -46,13 +45,13 @@ struct SelectSchoolScreen: View {
                     .padding()
                 }
             //학교 목록
-            List {
+            ScrollView {
                 ForEach(filteredSchools, id: \.schoolCode) { school in
                     VStack(alignment: .leading) {
-                        VStack(alignment: .leading, spacing: 3) {
+                        VStack(spacing: 3) {
                             Text(school.schoolName)
                         }
-                        .padding(.bottom)
+                        .padding(.vertical)
                         Rectangle()
                             .frame(height: 0.3)
                     }
@@ -61,9 +60,8 @@ struct SelectSchoolScreen: View {
                     }
                 }
             }
-            .listStyle(PlainListStyle())
-            .padding(.vertical, 10)
         }
+        .padding()
         .onAppear(perform: {
             schoolVM.fetchSchools()
         })

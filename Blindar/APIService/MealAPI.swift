@@ -5,8 +5,6 @@
 //  Created by Suji Lee on 7/9/24.
 //
 
-import Foundation
-
 import Combine
 import Foundation
 
@@ -31,7 +29,7 @@ class MealAPI {
             }
             .decode(type: MealResponse.self, decoder: JSONDecoder())
             .map { mealResponse in
-                mealResponse.response.map { Meal(ymd: $0.ymd, dishes: $0.dishes, origins: $0.dishes, nutrients: $0.nutrients, calorie: $0.calorie, meal_time: $0.meal_time) }
+                mealResponse.response.map { Meal(ymd: $0.ymd, dishes: $0.dishes, origins: $0.origins, nutrients: $0.nutrients, calorie: $0.calorie, mealTime: $0.mealTime) }
             }
             .handleEvents(receiveCompletion: { completion in
                 switch completion {

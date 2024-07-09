@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct MainCalendarPage: View {
+    @ObservedObject var mealVM: MealViewModel = MealViewModel()
+    
     var body: some View {
         NavigationStack {
-            ScrollView {
-                
-                CalendarView()
-                MealContentsView()
+            VStack {
+                ScrollView {
+                    CalendarView()
+                    MealContentsView()
+                }
+            }
+            .onAppear {
+                mealVM.fetchMeals()
             }
         }
     }
