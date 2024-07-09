@@ -75,7 +75,7 @@ struct SelectSchoolScreen: View {
         }
         
         // Insert new school
-        let schoolToSave = SchoolLocalData(school_name: school.schoolName)
+        let schoolToSave = SchoolLocalData(schoolName: school.schoolName, schoolCode: school.schoolCode)
         modelContext.insert(schoolToSave)
         try? modelContext.save()
     }
