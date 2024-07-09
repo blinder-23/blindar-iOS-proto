@@ -16,7 +16,6 @@ struct BlindarApp: App {
             MealLocalData.self,
             ScheduleData.self,
             SchoolLocalData.self,
-//            MemoData.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
         

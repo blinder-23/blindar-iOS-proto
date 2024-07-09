@@ -25,14 +25,15 @@ struct School: Codable, Hashable {
         //            case atptOfcdcScCode = "atpt_ofcdc_sc_code"
         case schoolName = "school_name"
     }
-    
 }
 
 @Model
 class SchoolLocalData {
-    var school_name: String //학교 이름 (한글)
+    var schoolName: String //학교 이름 (한글)
+    var schoolCode: Int
     
-    init(school_name: String) {
-        self.school_name = school_name
+    init(schoolName: String, schoolCode: Int) {
+        self.schoolName = schoolName
+        self.schoolCode = schoolCode
     }
 }
