@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CalendarView: View {
-    @State private var currentDate = Date()
+    @Binding var currentDate: Date
     
     var body: some View {
         VStack {
@@ -71,20 +71,6 @@ struct CalendarHeader: View {
                 }
             }
         }
-    }
-    
-    var yearFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "ko_KR")
-        formatter.dateFormat = "YYYY"
-        return formatter
-    }
-    
-    var monthFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "ko_KR")
-        formatter.dateFormat = "M"
-        return formatter
     }
 }
 
@@ -179,6 +165,6 @@ struct CustomCalendar: View {
     }
 }
 
-#Preview {
-    CalendarView()
-}
+//#Preview {
+//    CalendarView(currentDate: <#T##Binding<Date>#>)
+//}

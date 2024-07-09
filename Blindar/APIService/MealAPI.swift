@@ -13,10 +13,19 @@ private let baseURL = Bundle.main.object(forInfoDictionaryKey: "BASE_URL") as? S
 class MealAPI {
     static let shared = MealAPI()
     
-    func fetchSchools() -> AnyPublisher<[Meal], Error> {
-        guard let url = URL(string: "https://\(baseURL)/meal") else {
+    func fetchMeals(schoolCode: Int, year: Int, month: String) -> AnyPublisher<MealResponse, Error> {
+        print("params", schoolCode, year, month)
+        var components = URLComponents(string: "https://\(baseURL)/meal")
+        components?.queryItems = [
+            URLQueryItem(name: "school_code", value: "\(schoolCode)"),
+            URLQueryItem(name: "year", value: "\(year)"),
+            URLQueryItem(name: "month", value: "\(month)")
+        ]
+        
+        guard let url = components?.url else {
             return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
         }
+                
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         
@@ -28,9 +37,6 @@ class MealAPI {
                 return output.data
             }
             .decode(type: MealResponse.self, decoder: JSONDecoder())
-            .map { mealResponse in
-                mealResponse.response.map { Meal(ymd: $0.ymd, dishes: $0.dishes, origins: $0.origins, nutrients: $0.nutrients, calorie: $0.calorie, mealTime: $0.mealTime) }
-            }
             .handleEvents(receiveCompletion: { completion in
                 switch completion {
                 case .failure(let error):

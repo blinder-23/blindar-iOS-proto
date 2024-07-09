@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0932EEA92C3D1D1900BD8745 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0932EEA82C3D1D1900BD8745 /* DateUtils.swift */; };
 		0962979E2C3D0DE30063C7CE /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0962979D2C3D0DE30063C7CE /* MealViewModel.swift */; };
 		096297A02C3D0E0F0063C7CE /* MealAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0962979F2C3D0E0F0063C7CE /* MealAPI.swift */; };
 		0985E2D72C2BD4C900BDED83 /* MemoNavigationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0985E2D62C2BD4C900BDED83 /* MemoNavigationPage.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0932EEA82C3D1D1900BD8745 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		0962979D2C3D0DE30063C7CE /* MealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel.swift; sourceTree = "<group>"; };
 		0962979F2C3D0E0F0063C7CE /* MealAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealAPI.swift; sourceTree = "<group>"; };
 		0985E2D62C2BD4C900BDED83 /* MemoNavigationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoNavigationPage.swift; sourceTree = "<group>"; };
@@ -108,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0932EEA72C3D1D0900BD8745 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0932EEA82C3D1D1900BD8745 /* DateUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		0985E2ED2C2D39EA00BDED83 /* APIService */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +163,7 @@
 				099EF6412C08732700222E2F /* Assets.xcassets */,
 				0985E2EB2C2BE43000BDED83 /* Config.xcconfig */,
 				099EF63B2C08732400222E2F /* BlindarApp.swift */,
+				0932EEA72C3D1D0900BD8745 /* Utils */,
 				0985E2ED2C2D39EA00BDED83 /* APIService */,
 				0985E2F02C2D3A2F00BDED83 /* ViewModel */,
 				099EF6672C0873A600222E2F /* Model */,
@@ -379,6 +390,7 @@
 				0985E32E2C2D450000BDED83 /* SelectSchoolScreen.swift in Sources */,
 				099EF6722C0876BC00222E2F /* ScheduleContentsView.swift in Sources */,
 				0985E2E72C2BDDC500BDED83 /* Feedback.swift in Sources */,
+				0932EEA92C3D1D1900BD8745 /* DateUtils.swift in Sources */,
 				0985E2EF2C2D3A0800BDED83 /* SchoolAPI.swift in Sources */,
 				0985E2E22C2BD85300BDED83 /* School.swift in Sources */,
 			);

@@ -13,7 +13,8 @@ var screenHeight = UIScreen.main.bounds.height
 
 struct ContentView: View {
     var body: some View {
-        SelectSchoolScreen()
+//        SelectSchoolScreen()
+        MainCalendarPage()
     }
 }
 
