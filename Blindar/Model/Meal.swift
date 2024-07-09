@@ -8,17 +8,8 @@
 import Foundation
 import SwiftData
 
-struct Meal: Codable {
-    var ymd: String //yyyyMMdd 날짜 문자열
-    var dishes: [Dish] //메뉴정보 배열
-    var origins: [Origin] //원산지 정보 배열
-    var nutrients: [Nutrient] //영상소 정보 배열
-    var calorie: Float //칼로리 정보
-    var meal_time: String //조식, 중식, 석식
-}
-
 @Model
-class MealData {
+class MealLocalData {
     var ymd: String //yyyyMMdd 날짜 문자열
     var dishes: [Dish] //메뉴정보 배열
     var origins: [Origin] //원산지 정보 배열
@@ -34,6 +25,15 @@ class MealData {
         self.calorie = calorie
         self.meal_time = meal_time
     }
+}
+
+struct Meal: Codable {
+    var ymd: String //yyyyMMdd 날짜 문자열
+    var dishes: [Dish] //메뉴정보 배열
+    var origins: [Origin] //원산지 정보 배열
+    var nutrients: [Nutrient] //영상소 정보 배열
+    var calorie: Float //칼로리 정보
+    var meal_time: String //조식, 중식, 석식
 }
 
 struct Dish: Codable {
@@ -94,17 +94,4 @@ struct Nutrient: Codable {
     var nutrient: String //영상소명 ex.탄수화물
     var unit: String //다나위 ex.g, mg
     var amount: String //양
-}
-
-@Model
-class NutrientData {
-    var nutrient: String //영상소명 ex.탄수화물
-    var unit: String //다나위 ex.g, mg
-    var amount: String //양
-    
-    init(nutrient: String, unit: String, amount: String) {
-        self.nutrient = nutrient
-        self.unit = unit
-        self.amount = amount
-    }
 }

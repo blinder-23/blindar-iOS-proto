@@ -13,7 +13,7 @@ struct BlindarApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             UserData.self,
-            MealData.self,
+            MealLocalData.self,
             ScheduleData.self,
             SchoolLocalData.self,
 //            MemoData.self,
