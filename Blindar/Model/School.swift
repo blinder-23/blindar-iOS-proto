@@ -9,18 +9,27 @@ import Foundation
 import SwiftData
 
 struct SchoolResponse: Codable {
-    var message: String
-    var responseCode: Int
-    var data: [School]
+    let message: String
+    let responseCode: Int
+    let data: [School]
 }
 
+// Define the refined data structure
 struct School: Codable, Hashable {
-    var school_name: String //학교 이름 (한글)
-    var school_code: Int //NEIS API에서 제공하는 표준 학교 코드
+    let schoolName: String
+    //    let atptOfcdcScCode: String
+    let schoolCode: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case schoolCode = "school_code"
+        //            case atptOfcdcScCode = "atpt_ofcdc_sc_code"
+        case schoolName = "school_name"
+    }
+    
 }
 
 @Model
-class SchoolData {
+class SchoolLocalData {
     var school_name: String //학교 이름 (한글)
     
     init(school_name: String) {

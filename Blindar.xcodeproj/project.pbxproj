@@ -184,10 +184,10 @@
 		099EF6672C0873A600222E2F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0985E2E12C2BD85300BDED83 /* School.swift */,
 				0985E2DB2C2BD7D500BDED83 /* User.swift */,
 				0985E2DD2C2BD81400BDED83 /* Meal.swift */,
 				0985E2DF2C2BD84B00BDED83 /* Schedule.swift */,
-				0985E2E12C2BD85300BDED83 /* School.swift */,
 				0985E2E42C2BDD0600BDED83 /* Memo.swift */,
 				0985E2E62C2BDDC500BDED83 /* Feedback.swift */,
 			);

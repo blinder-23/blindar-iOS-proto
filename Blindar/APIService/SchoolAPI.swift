@@ -13,12 +13,11 @@ private let baseURL = Bundle.main.object(forInfoDictionaryKey: "BASE_URL") as? S
 class SchoolAPI {
     static let shared = SchoolAPI()
     
-    func fetchSchools() -> AnyPublisher<SchoolResponse, Error> {
+    func fetchSchools() -> AnyPublisher<[School], Error> {
         guard let url = URL(string: "https://\(baseURL)/school_list") else {
             return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
         }
         var request = URLRequest(url: url)
-        print("request : ", request)
         request.httpMethod = "GET"
         
         return URLSession.shared.dataTaskPublisher(for: request)
@@ -29,6 +28,9 @@ class SchoolAPI {
                 return output.data
             }
             .decode(type: SchoolResponse.self, decoder: JSONDecoder())
+            .map { schoolResponse in
+                schoolResponse.data.map { School(schoolName: $0.schoolName, schoolCode: $0.schoolCode) }
+            }
             .handleEvents(receiveCompletion: { completion in
                 switch completion {
                 case .failure(let error):
@@ -53,4 +55,3 @@ class SchoolAPI {
             .eraseToAnyPublisher()
     }
 }
-
