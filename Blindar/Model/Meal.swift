@@ -15,16 +15,20 @@ class MealLocalData {
     var origins: [Origin] //원산지 정보 배열
     var nutrients: [Nutrient] //영상소 정보 배열
     var calorie: Float //칼로리 정보
-    var meal_time: String //조식, 중식, 석식
+    var mealTime: String //조식, 중식, 석식
     
-    init(ymd: String, dishes: [Dish], origins: [Origin], nutrients: [Nutrient], calorie: Float, meal_time: String) {
+    init(ymd: String, dishes: [Dish], origins: [Origin], nutrients: [Nutrient], calorie: Float, mealTime: String) {
         self.ymd = ymd
         self.dishes = dishes
         self.origins = origins
         self.nutrients = nutrients
         self.calorie = calorie
-        self.meal_time = meal_time
+        self.mealTime = mealTime
     }
+}
+
+struct MealResponse: Codable {
+    let response: [Meal]
 }
 
 struct Meal: Codable {
@@ -33,7 +37,16 @@ struct Meal: Codable {
     var origins: [Origin] //원산지 정보 배열
     var nutrients: [Nutrient] //영상소 정보 배열
     var calorie: Float //칼로리 정보
-    var meal_time: String //조식, 중식, 석식
+    var mealTime: String //조식, 중식, 석식
+    
+    enum CodingKeys: String, CodingKey {
+        case mealTime = "meal_time"
+        case ymd = "ymd"
+        case dishes = "dishes"
+        case origins = "origins"
+        case calorie = "calorie"
+        case nutrients = "nutrients"
+    }
 }
 
 struct Dish: Codable {
