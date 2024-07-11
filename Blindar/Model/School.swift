@@ -17,12 +17,10 @@ struct SchoolResponse: Codable {
 // Define the refined data structure
 struct School: Codable, Hashable {
     let schoolName: String
-    //    let atptOfcdcScCode: String
     let schoolCode: Int
     
     enum CodingKeys: String, CodingKey {
         case schoolCode = "school_code"
-        //            case atptOfcdcScCode = "atpt_ofcdc_sc_code"
         case schoolName = "school_name"
     }
 }

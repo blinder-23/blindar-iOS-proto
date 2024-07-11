@@ -14,6 +14,7 @@ enum MealType: String, CaseIterable {
 }
 
 struct MealContentsView: View {
+    @ObservedObject var mealVM: MealViewModel
     @State private var mealtype: MealType = .lunch
     var mealTypeHeader = ["조식", "중식", "석식"]
     
@@ -45,7 +46,13 @@ struct MealContentsView: View {
                             .foregroundColor(.gray)
                     })
                     //Meal Info
-                    //더미 데이터
+                    ForEach(mealVM.selectedMeals, id: \.self) { meal in
+                        Section(header: Text("Menu for \(meal.ymd)")) {
+                            ForEach(meal.dishes, id: \.self) { dish in
+                                Text(dish.menu)
+                            }
+                        }
+                    }
                     VStack {
                         switch mealtype {
                         case .breakfast:
@@ -92,5 +99,5 @@ struct MealContentsView: View {
 }
 
 #Preview {
-    MealContentsView()
+    MealContentsView(mealVM: MealViewModel())
 }

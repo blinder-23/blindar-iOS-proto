@@ -37,7 +37,7 @@ struct MealResponse: Codable {
     let response: [Meal]
 }
 
-struct Meal: Codable {
+struct Meal: Codable, Hashable {
     var ymd: String //yyyyMMdd 날짜 문자열
     var dishes: [Dish] //메뉴정보 배열
     var origins: [Origin] //원산지 정보 배열
@@ -55,17 +55,17 @@ struct Meal: Codable {
     }
 }
 
-struct Dish: Codable {
+struct Dish: Codable, Hashable {
     var menu: String //메뉴 이름 (한글)
     var allergies: [String] //알러지 정보를 1~18까지의 문자열로 매핑
 }
 
-struct Origin: Codable {
+struct Origin: Codable, Hashable {
     var ingredient: String //재료 이름
     var origin: String //원산지
 }
 
-struct Nutrient: Codable {
+struct Nutrient: Codable, Hashable {
     var nutrient: String //영양소명 ex.탄수화물
     var unit: String //단위 ex.g, mg
     var amount: String //양

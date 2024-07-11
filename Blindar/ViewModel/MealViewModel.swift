@@ -10,6 +10,7 @@ import SwiftUI
 
 class MealViewModel: ObservableObject {
     @Published var meals: [Meal] = []
+    @Published var selectedMeals: [Meal] = [] // 선택된 날짜에 해당하는 식단 정보
     @Published var errorMessage: String?
     private var cancellables = Set<AnyCancellable>()
     
@@ -25,9 +26,8 @@ class MealViewModel: ObservableObject {
                 }
             }, receiveValue: { mealResponse in
                 self.meals = mealResponse.response
+                
             })
             .store(in: &cancellables)
     }
 }
-
-

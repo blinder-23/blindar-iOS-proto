@@ -14,4 +14,3 @@ struct Feedback: Codable {
     var app_version: String  //App version
     var contents: String //피드백 내용
 }
-

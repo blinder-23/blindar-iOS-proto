@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct CalendarView: View {
+    @ObservedObject var mealVM: MealViewModel
     @Binding var currentDate: Date
     
     var body: some View {
         VStack {
             CalendarHeader(currentDate: $currentDate)
-            CustomCalendar(currentDate: $currentDate)
+            CustomCalendar(mealVM: mealVM, currentDate: $currentDate)
                 .gesture(DragGesture().onEnded { value in
                     if value.translation.width < 0 {
                         currentDate = Calendar.current.date(byAdding: .month, value: 1, to: currentDate) ?? currentDate
@@ -75,6 +76,7 @@ struct CalendarHeader: View {
 }
 
 struct CustomCalendar: View {
+    @ObservedObject var mealVM: MealViewModel
     @Binding var currentDate: Date
     
     private var currentMonth: Int {
@@ -125,7 +127,9 @@ struct CustomCalendar: View {
                             .foregroundColor(color(for: date))
                             .overlay(todayOverlay(for: date))
                             .onTapGesture {
-                                print(dateFormatted(date))
+                                let dateString = dateFormatted(date)
+                                mealVM.fetchMealsForDate(date: dateString)
+                                currentDate = date
                             }
                     }
                 }
@@ -158,9 +162,15 @@ struct CustomCalendar: View {
         }
     }
     
+//    private func dateFormatted(_ date: Date) -> String {
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "yyyy-MM-dd"
+//        return formatter.string(from: date)
+//    }
+    
     private func dateFormatted(_ date: Date) -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.dateFormat = "yyyyMMdd" // 날짜 형식을 서버에서 받는 형식에 맞춤
         return formatter.string(from: date)
     }
 }
