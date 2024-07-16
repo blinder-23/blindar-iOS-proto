@@ -12,6 +12,7 @@ class MemoViewModel: ObservableObject {
     @Published var memos: [Memo] = []
     @Published var newMemoId: String = ""
     @Published var errorMessage: String?
+    @Published var successMessage: String?
     private var cancellables = Set<AnyCancellable>()
     
     func fetchMemos(userId: String) {
@@ -50,20 +51,20 @@ class MemoViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    func deleteMemo(newMemo: Memo) {
-        MemoAPI.shared.postMemos(newMemo: newMemo)
+    func deleteMemo(memoId: String) {
+        MemoAPI.shared.deleteMemo(memoId: memoId)
             .receive(on: DispatchQueue.main) // 메인 스레드에서 값을 받도록 설정
-            .sink(receiveCompletion: { completion in
+            .sink(receiveCompletion: { [weak self] completion in
                 switch completion {
                 case .failure(let error):
-                    self.errorMessage = error.localizedDescription
+                    self?.errorMessage = error.localizedDescription
                 case .finished:
                     break
                 }
-            }, receiveValue: { data in
-                self.newMemoId = data.memoId
-                //디버깅
-                print("new memo id : ", self.newMemoId)
+            }, receiveValue: { [weak self] successMessage in
+                self?.successMessage = successMessage
+                // 디버깅
+                print("Deletion success: ", successMessage)
             })
             .store(in: &cancellables)
     }
