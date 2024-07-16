@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09160DA62C466A0B00489FAE /* MemoModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09160DA52C466A0B00489FAE /* MemoModal.swift */; };
+		09160DAA2C466D0D00489FAE /* FeedbackNavigationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09160DA92C466D0D00489FAE /* FeedbackNavigationPage.swift */; };
 		0932EEA92C3D1D1900BD8745 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0932EEA82C3D1D1900BD8745 /* DateUtils.swift */; };
 		093BB7F32C4650E9006C6B07 /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093BB7F22C4650E9006C6B07 /* MemoViewModel.swift */; };
 		093BB7F52C4650F0006C6B07 /* MemoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093BB7F42C4650F0006C6B07 /* MemoAPI.swift */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		09160DA52C466A0B00489FAE /* MemoModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoModal.swift; sourceTree = "<group>"; };
+		09160DA92C466D0D00489FAE /* FeedbackNavigationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackNavigationPage.swift; sourceTree = "<group>"; };
 		0932EEA82C3D1D1900BD8745 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		093BB7F22C4650E9006C6B07 /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
 		093BB7F42C4650F0006C6B07 /* MemoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoAPI.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				0985E2D62C2BD4C900BDED83 /* MemoNavigationPage.swift */,
 				099EF6752C09607D00222E2F /* NutrientNavigationPage.swift */,
 				09160DA52C466A0B00489FAE /* MemoModal.swift */,
+				09160DA92C466D0D00489FAE /* FeedbackNavigationPage.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				0985E32E2C2D450000BDED83 /* SelectSchoolScreen.swift in Sources */,
 				09160DA62C466A0B00489FAE /* MemoModal.swift in Sources */,
 				093BB7F32C4650E9006C6B07 /* MemoViewModel.swift in Sources */,
+				09160DAA2C466D0D00489FAE /* FeedbackNavigationPage.swift in Sources */,
 				099EF6722C0876BC00222E2F /* ScheduleContentsView.swift in Sources */,
 				0985E2E72C2BDDC500BDED83 /* Feedback.swift in Sources */,
 				0932EEA92C3D1D1900BD8745 /* DateUtils.swift in Sources */,
