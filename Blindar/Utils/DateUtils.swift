@@ -15,6 +15,12 @@ func extractYearAndMonth(from date: Date) -> (year: Int, monthWithZero: String) 
     return (year, monthWithZero)
 }
 
+func configureDateFormatter() -> DateFormatter {
+    let formatter = DateFormatter()
+    formatter.locale = Locale(identifier: "ko_KR") // 한국어로 설정
+    formatter.dateFormat = "yyyy년 MM월 dd일 (EE)" // 연, 월, 일, 요일 형식
+    return formatter
+}
 
 var yearFormatter: DateFormatter {
     let formatter = DateFormatter()
