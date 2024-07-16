@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		09160DA62C466A0B00489FAE /* MemoModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09160DA52C466A0B00489FAE /* MemoModal.swift */; };
 		09160DAA2C466D0D00489FAE /* FeedbackNavigationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09160DA92C466D0D00489FAE /* FeedbackNavigationPage.swift */; };
+		09160DAC2C466F9500489FAE /* FeedbackAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09160DAB2C466F9500489FAE /* FeedbackAPI.swift */; };
+		09160DAE2C46705500489FAE /* FeedbackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09160DAD2C46705500489FAE /* FeedbackViewModel.swift */; };
 		0932EEA92C3D1D1900BD8745 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0932EEA82C3D1D1900BD8745 /* DateUtils.swift */; };
 		093BB7F32C4650E9006C6B07 /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093BB7F22C4650E9006C6B07 /* MemoViewModel.swift */; };
 		093BB7F52C4650F0006C6B07 /* MemoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093BB7F42C4650F0006C6B07 /* MemoAPI.swift */; };
@@ -59,6 +61,8 @@
 /* Begin PBXFileReference section */
 		09160DA52C466A0B00489FAE /* MemoModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoModal.swift; sourceTree = "<group>"; };
 		09160DA92C466D0D00489FAE /* FeedbackNavigationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackNavigationPage.swift; sourceTree = "<group>"; };
+		09160DAB2C466F9500489FAE /* FeedbackAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAPI.swift; sourceTree = "<group>"; };
+		09160DAD2C46705500489FAE /* FeedbackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewModel.swift; sourceTree = "<group>"; };
 		0932EEA82C3D1D1900BD8745 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		093BB7F22C4650E9006C6B07 /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
 		093BB7F42C4650F0006C6B07 /* MemoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoAPI.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 				0985E2EE2C2D3A0800BDED83 /* SchoolAPI.swift */,
 				0962979F2C3D0E0F0063C7CE /* MealAPI.swift */,
 				093BB7F42C4650F0006C6B07 /* MemoAPI.swift */,
+				09160DAB2C466F9500489FAE /* FeedbackAPI.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 				0985E32F2C2D468800BDED83 /* SchoolViewModel.swift */,
 				0962979D2C3D0DE30063C7CE /* MealViewModel.swift */,
 				093BB7F22C4650E9006C6B07 /* MemoViewModel.swift */,
+				09160DAD2C46705500489FAE /* FeedbackViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -388,6 +394,7 @@
 				0985E2DE2C2BD81400BDED83 /* Meal.swift in Sources */,
 				096297A02C3D0E0F0063C7CE /* MealAPI.swift in Sources */,
 				099EF66E2C08747800222E2F /* CalendarView.swift in Sources */,
+				09160DAE2C46705500489FAE /* FeedbackViewModel.swift in Sources */,
 				0985E3302C2D468800BDED83 /* SchoolViewModel.swift in Sources */,
 				0985E2E02C2BD84B00BDED83 /* Schedule.swift in Sources */,
 				099EF63E2C08732400222E2F /* ContentView.swift in Sources */,
@@ -406,6 +413,7 @@
 				099EF6722C0876BC00222E2F /* ScheduleContentsView.swift in Sources */,
 				0985E2E72C2BDDC500BDED83 /* Feedback.swift in Sources */,
 				0932EEA92C3D1D1900BD8745 /* DateUtils.swift in Sources */,
+				09160DAC2C466F9500489FAE /* FeedbackAPI.swift in Sources */,
 				0985E2EF2C2D3A0800BDED83 /* SchoolAPI.swift in Sources */,
 				093BB7F52C4650F0006C6B07 /* MemoAPI.swift in Sources */,
 				0985E2E22C2BD85300BDED83 /* School.swift in Sources */,
