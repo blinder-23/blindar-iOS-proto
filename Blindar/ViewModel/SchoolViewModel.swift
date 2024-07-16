@@ -29,6 +29,3 @@ class SchoolViewModel: ObservableObject {
             .store(in: &cancellables)
     }
 }
-
-
-

@@ -8,6 +8,11 @@
 import Foundation
 import SwiftData
 
+struct MemoResponse: Codable {
+    let response: [Memo]
+
+}
+
 struct Memo: Codable {
     var userId: String //사용자 UID
     var date: String //yyyyMMdd

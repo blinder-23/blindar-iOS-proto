@@ -8,6 +8,8 @@
 import SwiftUI
 import SwiftData
 
+//let baseURL = Bundle.main.object(forInfoDictionaryKey: "BASE_URL") as? String ?? ""
+
 @main
 struct BlindarApp: App {
     var sharedModelContainer: ModelContainer = {
@@ -16,6 +18,7 @@ struct BlindarApp: App {
             MealLocalData.self,
             ScheduleData.self,
             SchoolLocalData.self,
+            MemoLocalData.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
         
